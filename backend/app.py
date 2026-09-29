@@ -108,7 +108,7 @@ fertilizer_df = pd.read_csv(os.path.join(data_raw_dir, 'Fertilizer.csv'))
 production_model_path = os.path.join(models_dir, 'production_pipeline.pkl')
 production_model = pickle.load(open(production_model_path, 'rb'))
 
-# ✅ ADD THIS HERE
+#  ADD THIS HERE
 irrigation_model = pickle.load(open(os.path.join(models_dir, 'irrigation_model.pkl'), 'rb'))
 # load columns (VERY IMPORTANT)
 irrigation_columns = pickle.load(open(os.path.join(models_dir, 'irrigation_columns.pkl'), 'rb'))
@@ -121,7 +121,7 @@ import requests
 def get_weather(city):
     api_key = "ad6e51a0d43036d443635d75adb339a8"
 
-    city_formatted = city + ",IN"   # 🔥 IMPORTANT FIX
+    city_formatted = city + ",IN"   #  IMPORTANT FIX
 
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city_formatted}&appid={api_key}&units=metric"
 

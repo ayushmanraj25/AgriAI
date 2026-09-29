@@ -19,7 +19,7 @@ model.fit(X, y)
 # Save model
 pickle.dump(model, open("models/irrigation_model.pkl", "wb"))
 
-# 🔥 IMPORTANT: save columns
+#  IMPORTANT: save columns
 pickle.dump(X.columns.tolist(), open("models/irrigation_columns.pkl", "wb"))
 
-print("Model trained + columns saved ✅")
+print("Model trained + columns saved ")

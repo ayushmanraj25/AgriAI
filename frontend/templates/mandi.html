@@ -93,7 +93,7 @@
         <span class="badge badge-success mb-3 px-3 py-2 rounded-pill shadow-sm" style="font-size: 0.85rem;">
             <span class="live-indicator"></span> LIVE UPDATES
         </span>
-        <h1 class="font-weight-bold">Live Mandi Prices 🌾</h1>
+        <h1 class="font-weight-bold">Live Mandi Prices </h1>
         <p class="text-muted">Get real-time market rates for crops across India to make profitable decisions.</p>
     </div>
 
@@ -166,14 +166,14 @@ document.addEventListener("DOMContentLoaded", function() {
     // Emoji mapping for aesthetics
     const getEmoji = (crop) => {
         const c = crop.toLowerCase();
-        if(c.includes('wheat')) return '🌾';
-        if(c.includes('rice')) return '🍚';
-        if(c.includes('maize') || c.includes('corn')) return '🌽';
-        if(c.includes('potato')) return '🥔';
-        if(c.includes('onion')) return '🧅';
-        if(c.includes('tomato')) return '🍅';
-        if(c.includes('cotton')) return '☁️';
-        return '🌱';
+        if(c.includes('wheat')) return '';
+        if(c.includes('rice')) return '';
+        if(c.includes('maize') || c.includes('corn')) return '';
+        if(c.includes('potato')) return '';
+        if(c.includes('onion')) return '';
+        if(c.includes('tomato')) return '';
+        if(c.includes('cotton')) return '';
+        return '';
     };
 
     function fetchPrices() {
